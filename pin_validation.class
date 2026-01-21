@@ -1,0 +1,25 @@
+package pin_validation;
+
+
+	import java.util.Scanner;
+	public class Validate {
+				
+		
+		  public static void main(String[] args) {
+		        Scanner sc = new Scanner(System.in);
+		        String pin;
+
+		        do {
+		            System.out.print("Enter a 4-digit PIN: ");
+		            pin = sc.nextLine();
+
+		            if (pin.length() != 4) {
+		                System.out.println("Invalid PIN.");
+		            }
+
+		        } while (pin.length() != 4);
+
+		        System.out.println("PIN Setup Successful.");
+		        sc.close();
+		    }
+		}
